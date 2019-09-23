@@ -233,11 +233,19 @@
                 
               
 
-              <time title="Created: 2019-09-12 10:41:24 / Modified: 12:12:57" itemprop="dateCreated datePublished" datetime="2019-09-12T10:41:24+08:00">2019-09-12</time>
+              <time title="Created: 2019-09-12 10:41:24" itemprop="dateCreated datePublished" datetime="2019-09-12T10:41:24+08:00">2019-09-12</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-23 19:33:24" itemprop="dateModified" datetime="2019-09-23T19:33:24+08:00">2019-09-23</time>
+              </span>
             
           
 
@@ -264,87 +272,29 @@
 </ol>
 <h3 id="安裝Node-js"><a href="#安裝Node-js" class="headerlink" title="安裝Node.js"></a>安裝Node.js</h3><p>首先到<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官網</a>下載並安裝node.js，下載建議的版本(下圖綠色格子左方)<br><img src="https://lh3.googleusercontent.com/cdN_zk5ErgKIUaBBI-FNHE3G-6fd_O25Cd7_Qeyt7Azcm9hlyZcuPRDR5WgMGKvy16Hl8eqhX2Xe2B_3shYTIPCiNzfY43dmAMtOcCKBVWc8GTRKJ-ZHKfdZzrNWRa0l0H9T9GBdsg=w2400" alt="nodejs"></p>
 <p>打開”命令提示字元”輸入node -v及npm -v會顯示版本號，代表安裝成功<br><img src="https://lh3.googleusercontent.com/XpLWyA5AG24AIfDCmRyj4bPgml5kP5TUG8sa5lLHbrggikqMDhmLVKKPA_CyPNvIq-IlWWwfqmGtlK3pD2ZZZ5AdSOqqJOUrCee_35LoZB766y83COl0gqoexRc9Ktb-l7J5BQtM8A=w2400" alt="node-v"></p>
-<h3 id="安裝Git"><a href="#安裝Git" class="headerlink" title="安裝Git"></a>安裝Git</h3>
-        
-      
-    </div>
+<blockquote>
+<p>npm（全稱 Node Package Manager，即「node包管理器」）是Node.js預設的、以JavaScript編寫的軟體套件管理系統。</p>
+</blockquote>
+<h3 id="安裝Git"><a href="#安裝Git" class="headerlink" title="安裝Git"></a>安裝Git</h3><p><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">安裝Git點我</a>，進入後會自動下載安裝程式，基本上只要一直Next就可以了，只是到以下畫面時我是選擇第二個選項(使用Windows命令提示字元)。</p>
+<p>安裝完成後，打開”命令提示字元”輸入”git –version”會顯示版本號，代表安裝成功</p>
+<h3 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h3><p>安裝Hexo 可以參考<a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="noopener">Hexo官網</a>。<br>打開”命令提示字元”輸入”npm install -g hexo-cli”，當完成安裝後，你也可以執行”hexo -v”，會列出一些套件的版本號，至此也就代表安裝成功。<br>欲建立hexo需先建立專案資料夾，如本專案欲建立在本機D:\myblog下，可以按以下步驟執行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /d d:\ 			//移動到D槽</span><br><span class="line">mkdir myblog 			//建立資料夾myblog</span><br><span class="line">cd myblog			//移動到myblog</span><br></pre></td></tr></table></figure>
 
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
+<p>此時終端機上所在的位置應為”D:\myblog”，接下來輸入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init			//建立hexo相關檔案</span><br><span class="line"></span><br><span class="line">npm install			//安裝hexo 相關套件</span><br></pre></td></tr></table></figure>
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/11/hello-world/">
+<p>至此hexo已經建置完成，接下來可以輸入以下指令查看網站建置是否完成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g 				//產生靜態檔案，就是把網站相關文件都產生出來</span><br><span class="line"></span><br><span class="line">hexo s 				//啟動web server，此時可以打開瀏覽器查看localhost:4000</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ErnestTsai">
-      <meta itemprop="description" content="從零開始的前端生活">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
+<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><h3 id="註冊Github帳號"><a href="#註冊Github帳號" class="headerlink" title="註冊Github帳號"></a>註冊Github帳號</h3><p>前往<a href="https://github.com/" target="_blank" rel="noopener">Github官網</a>註冊一個帳號並登入<br><img src="https://lh3.googleusercontent.com/WzoG0DsFIAQrLN9m2udbe8_KWI53BAVo9nuUrVf8KmjgCB2aogzLVRI3dVNBA05G6jIcxD34-QQqINfLOyE5kFWBfyHfG8Y0RlTv9AQ0VZHatxQ1IVLC_pTBZQkrUDqv3n38W6MR_A=w2400" alt="newGithub"></p>
+<h3 id="建立儲存庫-repositores"><a href="#建立儲存庫-repositores" class="headerlink" title="建立儲存庫(repositores)"></a>建立儲存庫(repositores)</h3><p>建立一個新的儲存庫，依序輸入如圖例，repositores name必須輸入”帳號.github.io”，每個github帳號只會有一個<br> <img src="https://lh3.googleusercontent.com/SZgb4etpzCLr7FLDhG9JF9-g4W62DfzUcOjwEsJt0I91wjCcqWbYv-_kuW-nKbYXBtHmn6QFhApH5BYqZYEYZ0Swq7q_kSz9Fd-usPdM3cUhkV2USDoQLmGBoI2Ln0ZvbhrhkJ8gcQ=w2400" alt="newRepositores"></p>
+<p>##佈署網站<br>在存放網站資料夾內找到”_config.yml”(網站相關設定的文件)，並找到deploy設定，將文件設定如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: http://github.com/username/username.github.io.git        //username替換成你的</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞瑞 BLOG">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/09/11/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-          
-        </h1>
+<p>之後在”命令提示字元”於專案路徑下，輸入以下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean			//清除緩存檔案</span><br><span class="line">hexo g				//建立靜態網站</span><br><span class="line">hexo d 				//將網站佈署到github</span><br></pre></td></tr></table></figure>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-09-11 00:13:58" itemprop="dateCreated datePublished" datetime="2019-09-11T00:13:58+08:00">2019-09-11</time>
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>之後打開瀏覽器輸入”username.github.io”，就出現你的網站啦</p>
 
         
       
@@ -410,7 +360,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
