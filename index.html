@@ -204,6 +204,94 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/12/2020-03-12-Vscode-使用hexo指令失效問題/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ErnestTsai">
+      <meta itemprop="description" content="從零開始的前端生活">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞瑞 BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/03/12/2020-03-12-Vscode-使用hexo指令失效問題/" class="post-title-link" itemprop="url">Vscode 使用hexo指令失效問題</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2020-03-12 23:43:40" itemprop="dateCreated datePublished" datetime="2020-03-12T23:43:40+08:00">2020-03-12</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-13 00:00:31" itemprop="dateModified" datetime="2020-03-13T00:00:31+08:00">2020-03-13</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Vscode-使用hexo指令失效問題"><a href="#Vscode-使用hexo指令失效問題" class="headerlink" title="Vscode 使用hexo指令失效問題"></a>Vscode 使用hexo指令失效問題</h1><h2 id="系統環境"><a href="#系統環境" class="headerlink" title="系統環境"></a>系統環境</h2><p>1.hexo: 3.9.0<br>2.hexo-cli: 2.0.0<br>3.os: Windows_NT 10.0.18363 win32 x64<br>4.node: 12.13.1</p>
+<p>因為電腦重灌，所以用VSCODE想要運行HEXO的時候發生指令失效的問題</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo : 無法辨識 &apos;hexo&apos; 詞彙是否為 Cmdlet、函數、指令檔或可執行程式的名稱。請檢查名稱拼字</span><br><span class="line">是否正確，如果包含路徑的話，請確認路徑是否正確，然後再試一次。</span><br></pre></td></tr></table></figure>
+
+<p>我在想應該是環境變數設定到，所以大概紀錄一下解法</p>
+<p>首先開啟Windows的=&gt;控制台=&gt;系統及安全性=&gt;系統=&gt;進階系統設定=&gt;進階=&gt;環境變數</p>
+<p>在環境變數裡面看到系統變數的項目裡面找到Path後，按編輯後再按瀏覽</p>
+<p>再把project_name/node_modules/.bin新增進去就可以了  //project_name</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/02/2019-12-02-CSS學習筆記/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -435,7 +523,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -448,7 +536,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
@@ -469,7 +557,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
