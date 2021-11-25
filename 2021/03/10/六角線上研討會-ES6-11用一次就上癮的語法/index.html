@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="`星爆！物件迴圈屌屌跑傳統做法 for…inObject.keys, Object.values1234567891011121314151617181920const family = &amp;#123;      ming: &amp;#123;        name: &amp;apos;小明&amp;apos;,      &amp;#125;,      jay: &amp;#123;        name: &amp;apos;杰倫&amp;">
+<meta name="keywords" content="hexschool,javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="六角線上研討會-ES6~11用一次就上癮的語法">
+<meta property="og:url" content="http://yoursite.com/2021/03/10/六角線上研討會-ES6-11用一次就上癮的語法/index.html">
+<meta property="og:site_name" content="瑞瑞 BLOG">
+<meta property="og:description" content="`星爆！物件迴圈屌屌跑傳統做法 for…inObject.keys, Object.values1234567891011121314151617181920const family = &amp;#123;      ming: &amp;#123;        name: &amp;apos;小明&amp;apos;,      &amp;#125;,      jay: &amp;#123;        name: &amp;apos;杰倫&amp;">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2021-03-14T16:44:06.525Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="六角線上研討會-ES6~11用一次就上癮的語法">
+<meta name="twitter:description" content="`星爆！物件迴圈屌屌跑傳統做法 for…inObject.keys, Object.values1234567891011121314151617181920const family = &amp;#123;      ming: &amp;#123;        name: &amp;apos;小明&amp;apos;,      &amp;#125;,      jay: &amp;#123;        name: &amp;apos;杰倫&amp;">
+  <link rel="canonical" href="http://yoursite.com/2021/03/10/六角線上研討會-ES6-11用一次就上癮的語法/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>六角線上研討會-ES6~11用一次就上癮的語法 | 瑞瑞 BLOG</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">瑞瑞 BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+  </ul>
+
+    
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/10/六角線上研討會-ES6-11用一次就上癮的語法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ErnestTsai">
+      <meta itemprop="description" content="從零開始的前端生活">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="瑞瑞 BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">六角線上研討會-ES6~11用一次就上癮的語法
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2021-03-10 20:04:01" itemprop="dateCreated datePublished" datetime="2021-03-10T20:04:01+08:00">2021-03-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-03-15 00:44:06" itemprop="dateModified" datetime="2021-03-15T00:44:06+08:00">2021-03-15</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="星爆！物件迴圈屌屌跑"><a href="#星爆！物件迴圈屌屌跑" class="headerlink" title="`星爆！物件迴圈屌屌跑"></a>`星爆！物件迴圈屌屌跑</h2><p>傳統做法 for…in<br>Object.keys, Object.values</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">const family = &#123;</span><br><span class="line">      ming: &#123;</span><br><span class="line">        name: &apos;小明&apos;,</span><br><span class="line">      &#125;,</span><br><span class="line">      jay: &#123;</span><br><span class="line">        name: &apos;杰倫&apos;,</span><br><span class="line">      &#125;,</span><br><span class="line">      casper: &#123;</span><br><span class="line">        name: &apos;卡斯伯&apos;,</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // ====</span><br><span class="line">    console.log(Object.values(family));</span><br><span class="line">    Object.values(family).forEach(item =&gt; &#123;</span><br><span class="line">      console.log(item);</span><br><span class="line">    &#125;);</span><br><span class="line">    console.log(Object.keys(family));</span><br><span class="line">    Object.keys(family).forEach((key) =&gt; &#123;</span><br><span class="line">      console.log(key, family[key]);</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure><a id="more"></a>
+
+
+<h2 id="可選串聯"><a href="#可選串聯" class="headerlink" title="可選串聯"></a>可選串聯</h2><p>關鍵字 optional chaining(可選串連)<br>不確定屬性是否存在，物件如何取得深層值而不出錯<br>let obj = {<br>    family: {<br>        name: ‘’<br>    }<br>}<br>console.log(obj?.family?.name);</p>
+<h2 id="空位合併-ES11"><a href="#空位合併-ES11" class="headerlink" title="空位合併(ES11)"></a>空位合併(ES11)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function fn(a) &#123;</span><br><span class="line">      const newValue = a ?? 100;</span><br><span class="line">      console.log(newValue);</span><br><span class="line">    &#125;</span><br><span class="line">    fn(null);</span><br></pre></td></tr></table></figure>
+
+<p>參數預設值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function fn(a = 100) &#123;</span><br><span class="line">      console.log(a);</span><br><span class="line">    &#125;</span><br><span class="line">    fn(0);</span><br></pre></td></tr></table></figure>
+
+<h2 id="戰鬥力超過-1000000000000000000000-大數值計算"><a href="#戰鬥力超過-1000000000000000000000-大數值計算" class="headerlink" title="戰鬥力超過 1000000000000000000000! 大數值計算"></a>戰鬥力超過 1000000000000000000000! 大數值計算</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(NUMBER.MAX_SAFE_INTEGER); //JS能計算最大數</span><br></pre></td></tr></table></figure>
+
+<p>關鍵字 BigInt</p>
+<h2 id="Vue3-的秘密，Proxy"><a href="#Vue3-的秘密，Proxy" class="headerlink" title="Vue3 的秘密，Proxy"></a>Vue3 的秘密，Proxy</h2><h3 id="傳統做法-defineProperty"><a href="#傳統做法-defineProperty" class="headerlink" title="傳統做法 defineProperty"></a>傳統做法 defineProperty</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123;</span><br><span class="line">      a: &apos;&apos;,</span><br><span class="line">      value: &#123;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    Object.defineProperty(obj, &apos;a&apos;, &#123;</span><br><span class="line">      get() &#123;</span><br><span class="line">        console.log(&apos;getter&apos;);</span><br><span class="line">        return this.value.a;</span><br><span class="line">      &#125;,</span><br><span class="line">      set(value) &#123;</span><br><span class="line">        // console.log(&apos;setter&apos;, value);</span><br><span class="line">        this.value.a = value;</span><br><span class="line">        const app = document.querySelector(&apos;#app&apos;);</span><br><span class="line">        app.innerHTML = this.value.a</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    obj.a = 1;</span><br><span class="line">    console.log(obj.a);</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用proxy"><a href="#使用proxy" class="headerlink" title="使用proxy"></a>使用proxy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const handler = &#123;</span><br><span class="line">  get(target, prop) &#123;</span><br><span class="line">    console.log(&apos;getter&apos;, target, prop);</span><br><span class="line">    return target[prop]</span><br><span class="line">  &#125;,</span><br><span class="line">  set(obj, prop, value) &#123;</span><br><span class="line">    console.log(&apos;setter&apos;, obj, prop, value)</span><br><span class="line">    obj[prop] = value;</span><br><span class="line">    const app = document.querySelector(&apos;#app&apos;);</span><br><span class="line">    app.innerHTML = obj[prop] </span><br><span class="line">    return true;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">const obj = new Proxy(&#123;&#125;, handler)</span><br><span class="line">obj.a = 1;</span><br><span class="line">console.log(obj.a);</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/hexschool/" rel="tag"># hexschool</a>
+            
+              <a href="/tags/javascript/" rel="tag"># javascript</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2021/03/07/使用vue-cli建立專案/" rel="next" title="使用vue-cli建立專案">
+                  <i class="fa fa-chevron-left"></i> 使用vue-cli建立專案
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2021/11/25/hexo-deploy-error/" rel="prev" title="hexo deploy error">
+                  hexo deploy error <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#星爆！物件迴圈屌屌跑"><span class="nav-number">1.</span> <span class="nav-text">`星爆！物件迴圈屌屌跑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可選串聯"><span class="nav-number">2.</span> <span class="nav-text">可選串聯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#空位合併-ES11"><span class="nav-number">3.</span> <span class="nav-text">空位合併(ES11)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#戰鬥力超過-1000000000000000000000-大數值計算"><span class="nav-number">4.</span> <span class="nav-text">戰鬥力超過 1000000000000000000000! 大數值計算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue3-的秘密，Proxy"><span class="nav-number">5.</span> <span class="nav-text">Vue3 的秘密，Proxy</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#傳統做法-defineProperty"><span class="nav-number">5.1.</span> <span class="nav-text">傳統做法 defineProperty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用proxy"><span class="nav-number">5.2.</span> <span class="nav-text">使用proxy</span></a></li></ol></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ErnestTsai</p>
+  <div class="site-description" itemprop="description">從零開始的前端生活</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">瑞瑞</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/muse.js?v=7.4.0"></script>
+
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
