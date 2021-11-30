@@ -55,22 +55,22 @@
   };
 </script>
 
-  <meta name="description" content="為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。所以在這邊紀錄一下建立這個部落格的過程。系統環境 Windows 10 安裝所需的工具 Node.js Git Hexo 安裝Node.js">
+  <meta name="description" content="為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。 所以在這邊紀錄一下建立這個部落格的過程。">
 <meta name="keywords" content="hexo,next,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Node.js + hexo + Github 快速建立部落格">
 <meta property="og:url" content="http://yoursite.com/2019/09/12/buildBlog/index.html">
-<meta property="og:site_name" content="瑞瑞 BLOG">
-<meta property="og:description" content="為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。所以在這邊紀錄一下建立這個部落格的過程。系統環境 Windows 10 安裝所需的工具 Node.js Git Hexo 安裝Node.js">
+<meta property="og:site_name" content="Rayrayer">
+<meta property="og:description" content="為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。 所以在這邊紀錄一下建立這個部落格的過程。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://lh3.googleusercontent.com/cdN_zk5ErgKIUaBBI-FNHE3G-6fd_O25Cd7_Qeyt7Azcm9hlyZcuPRDR5WgMGKvy16Hl8eqhX2Xe2B_3shYTIPCiNzfY43dmAMtOcCKBVWc8GTRKJ-ZHKfdZzrNWRa0l0H9T9GBdsg=w2400">
 <meta property="og:image" content="https://lh3.googleusercontent.com/XpLWyA5AG24AIfDCmRyj4bPgml5kP5TUG8sa5lLHbrggikqMDhmLVKKPA_CyPNvIq-IlWWwfqmGtlK3pD2ZZZ5AdSOqqJOUrCee_35LoZB766y83COl0gqoexRc9Ktb-l7J5BQtM8A=w2400">
 <meta property="og:image" content="https://lh3.googleusercontent.com/WzoG0DsFIAQrLN9m2udbe8_KWI53BAVo9nuUrVf8KmjgCB2aogzLVRI3dVNBA05G6jIcxD34-QQqINfLOyE5kFWBfyHfG8Y0RlTv9AQ0VZHatxQ1IVLC_pTBZQkrUDqv3n38W6MR_A=w2400">
 <meta property="og:image" content="https://lh3.googleusercontent.com/SZgb4etpzCLr7FLDhG9JF9-g4W62DfzUcOjwEsJt0I91wjCcqWbYv-_kuW-nKbYXBtHmn6QFhApH5BYqZYEYZ0Swq7q_kSz9Fd-usPdM3cUhkV2USDoQLmGBoI2Ln0ZvbhrhkJ8gcQ=w2400">
-<meta property="og:updated_time" content="2021-03-01T14:21:22.919Z">
+<meta property="og:updated_time" content="2021-11-30T16:10:57.963Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Node.js + hexo + Github 快速建立部落格">
-<meta name="twitter:description" content="為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。所以在這邊紀錄一下建立這個部落格的過程。系統環境 Windows 10 安裝所需的工具 Node.js Git Hexo 安裝Node.js">
+<meta name="twitter:description" content="為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。 所以在這邊紀錄一下建立這個部落格的過程。">
 <meta name="twitter:image" content="https://lh3.googleusercontent.com/cdN_zk5ErgKIUaBBI-FNHE3G-6fd_O25Cd7_Qeyt7Azcm9hlyZcuPRDR5WgMGKvy16Hl8eqhX2Xe2B_3shYTIPCiNzfY43dmAMtOcCKBVWc8GTRKJ-ZHKfdZzrNWRa0l0H9T9GBdsg=w2400">
   <link rel="canonical" href="http://yoursite.com/2019/09/12/buildBlog/">
 
@@ -86,8 +86,18 @@
   };
 </script>
 
-  <title>Node.js + hexo + Github 快速建立部落格 | 瑞瑞 BLOG</title>
+  <title>Node.js + hexo + Github 快速建立部落格 | Rayrayer</title>
   
+  <script async src="https://www.googletagmanager.com/gtag/js?id=3076734408"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '3076734408');
+    }
+  </script>
 
 
 
@@ -133,7 +143,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">瑞瑞 BLOG</span>
+        <span class="site-title">Rayrayer</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -215,13 +225,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/12/buildBlog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ErnestTsai">
+      <meta itemprop="name" content="Rayrayer">
       <meta itemprop="description" content="從零開始的前端生活">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞瑞 BLOG">
+      <meta itemprop="name" content="Rayrayer">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">Node.js + hexo + Github 快速建立部落格
@@ -251,7 +261,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-01 22:21:22" itemprop="dateModified" datetime="2021-03-01T22:21:22+08:00">2021-03-01</time>
+                <time title="Modified: 2021-12-01 00:10:57" itemprop="dateModified" datetime="2021-12-01T00:10:57+08:00">2021-12-01</time>
               </span>
             
           
@@ -281,17 +291,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。</p><p>所以在這邊紀錄一下建立這個部落格的過程。</p><h2 id="系統環境"><a href="#系統環境" class="headerlink" title="系統環境"></a>系統環境</h2><ul>
+        <p>為了即將轉職為前端工程師的我，好紀錄一些學習上的心得，所以想當然爾自然是要學習開個部落格來玩玩囉(其實是自己的一個執念，身為前端工程師怎麼可以不會建部落格XD)。</p>
+<p>所以在這邊紀錄一下建立這個部落格的過程。</p>
+<a id="more"></a>
+
+<h2 id="系統環境"><a href="#系統環境" class="headerlink" title="系統環境"></a>系統環境</h2><ul>
 <li>Windows 10</li>
-</ul><h2 id="安裝所需的工具"><a href="#安裝所需的工具" class="headerlink" title="安裝所需的工具"></a>安裝所需的工具</h2><ol>
+</ul>
+<h2 id="安裝所需的工具"><a href="#安裝所需的工具" class="headerlink" title="安裝所需的工具"></a>安裝所需的工具</h2><ol>
 <li>Node.js</li>
 <li>Git</li>
 <li>Hexo</li>
-</ol><h3 id="安裝Node-js"><a href="#安裝Node-js" class="headerlink" title="安裝Node.js"></a>安裝Node.js</h3><a id="more"></a>
-
-
-
-<p>首先到<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官網</a>下載並安裝node.js，下載建議的版本(下圖綠色格子左方)<br><img src="https://lh3.googleusercontent.com/cdN_zk5ErgKIUaBBI-FNHE3G-6fd_O25Cd7_Qeyt7Azcm9hlyZcuPRDR5WgMGKvy16Hl8eqhX2Xe2B_3shYTIPCiNzfY43dmAMtOcCKBVWc8GTRKJ-ZHKfdZzrNWRa0l0H9T9GBdsg=w2400" alt="nodejs"></p>
+</ol>
+<h3 id="安裝Node-js"><a href="#安裝Node-js" class="headerlink" title="安裝Node.js"></a>安裝Node.js</h3><p>首先到<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官網</a>下載並安裝node.js，下載建議的版本(下圖綠色格子左方)<br><img src="https://lh3.googleusercontent.com/cdN_zk5ErgKIUaBBI-FNHE3G-6fd_O25Cd7_Qeyt7Azcm9hlyZcuPRDR5WgMGKvy16Hl8eqhX2Xe2B_3shYTIPCiNzfY43dmAMtOcCKBVWc8GTRKJ-ZHKfdZzrNWRa0l0H9T9GBdsg=w2400" alt="nodejs"></p>
 <p>打開”命令提示字元”輸入node -v及npm -v會顯示版本號，代表安裝成功<br><img src="https://lh3.googleusercontent.com/XpLWyA5AG24AIfDCmRyj4bPgml5kP5TUG8sa5lLHbrggikqMDhmLVKKPA_CyPNvIq-IlWWwfqmGtlK3pD2ZZZ5AdSOqqJOUrCee_35LoZB766y83COl0gqoexRc9Ktb-l7J5BQtM8A=w2400" alt="node-v"></p>
 <blockquote>
 <p>npm（全稱 Node Package Manager，即「node包管理器」）是Node.js預設的、以JavaScript編寫的軟體套件管理系統。</p>
@@ -351,8 +363,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/12/02/CSS學習筆記/" rel="prev" title="CSS學習筆記">
-                  CSS學習筆記 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/12/02/CSS學習筆記/" rel="prev" title="CSS學習筆記 - filter 用法">
+                  CSS學習筆記 - filter 用法 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -418,7 +430,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">ErnestTsai</p>
+  <p class="site-author-name" itemprop="name">Rayrayer</p>
   <div class="site-description" itemprop="description">從零開始的前端生活</div>
 </div>
   <nav class="site-state motion-element">
@@ -464,7 +476,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">瑞瑞</span>
+  <span class="author" itemprop="copyrightHolder">Rayrayer</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>

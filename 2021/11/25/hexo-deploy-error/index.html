@@ -55,20 +55,20 @@
   };
 </script>
 
-  <meta name="description" content="hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Objecthexo deploy -g時出現以下錯誤出現以上的錯誤，後來查詢了一下是因為node.js版本過高導致當時我的node.js版本是v14~">
+  <meta name="description" content="hexo deploy -g時出現以下錯誤 hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object">
 <meta name="keywords" content="hexo,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo deploy error">
 <meta property="og:url" content="http://yoursite.com/2021/11/25/hexo-deploy-error/index.html">
-<meta property="og:site_name" content="瑞瑞 BLOG">
-<meta property="og:description" content="hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Objecthexo deploy -g時出現以下錯誤出現以上的錯誤，後來查詢了一下是因為node.js版本過高導致當時我的node.js版本是v14~">
+<meta property="og:site_name" content="Rayrayer">
+<meta property="og:description" content="hexo deploy -g時出現以下錯誤 hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://imgur.com/gUMb9EF">
-<meta property="og:updated_time" content="2021-11-25T17:04:41.367Z">
+<meta property="og:image" content="https://lh3.googleusercontent.com/oPDVNVO4DV7lH44RNccFJ4zwILJZmfjoYbfwcc9Kvl4u1qPjU6WKcgrRzolEFc4cqmtKBDo1zBXRBbE319Apm5t_gzv58i0HxDqQ-tbanYAyEjzsjD2YnBpPVI4ucCd_BkiSanBXy1CBHkUPXbTHjRwFS4Nth1BfbAfggINR_d7dxbVpsshK3WLzdzeK8jXoXUrTOAloLIjDhVLfi_q1ocW9xExtuR6g0dc6to0mcW_piwx07WaYvmqHjFbbj1-UCWamDqrjPcloalUz3Nk6UAkqI-it7NgjMnNCQ6X6gkqIkjWHnIy6eY1wCzynSiYqx57P43j0EMR6jSENpLhnmmC1mawopHrr9aZxYuiqm7IunjctnzOjijXE9eQ4bhp0oY3xJ981drX4wyKGhK5erqnUeLeXrYRNQllHd7V1qyHwEbcdN7R2fWyFwvLZ5hB1Xcl_I-odHsY-TvrNbnZ39EKHytbFJI5EXfiU-HTAgwN0fI9qTzhPdXRgMkzypCFjoQe0kobbcM834W1OowGnSTFJFm91u-U1SK6XQ3Ui3Pi_hEZvXZF2wHdoSTxCAPQdndZ3jZdIfD-pNQmpXZ-Bfpqml_7UN8UZdBwkufPKY1ULHgnlZFQsrDLSUn5bx2DlnFucMa6qma2QFf1kbyV3daWEE4RQuRXX711HUCikeF27C0XZgcMwIC9M-ctSYYMmy2udGWsMGNKVtLaoseRgrwA=w1318-h464-no?authuser=0">
+<meta property="og:updated_time" content="2021-11-30T16:16:51.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo deploy error">
-<meta name="twitter:description" content="hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Objecthexo deploy -g時出現以下錯誤出現以上的錯誤，後來查詢了一下是因為node.js版本過高導致當時我的node.js版本是v14~">
-<meta name="twitter:image" content="https://imgur.com/gUMb9EF">
+<meta name="twitter:description" content="hexo deploy -g時出現以下錯誤 hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/oPDVNVO4DV7lH44RNccFJ4zwILJZmfjoYbfwcc9Kvl4u1qPjU6WKcgrRzolEFc4cqmtKBDo1zBXRBbE319Apm5t_gzv58i0HxDqQ-tbanYAyEjzsjD2YnBpPVI4ucCd_BkiSanBXy1CBHkUPXbTHjRwFS4Nth1BfbAfggINR_d7dxbVpsshK3WLzdzeK8jXoXUrTOAloLIjDhVLfi_q1ocW9xExtuR6g0dc6to0mcW_piwx07WaYvmqHjFbbj1-UCWamDqrjPcloalUz3Nk6UAkqI-it7NgjMnNCQ6X6gkqIkjWHnIy6eY1wCzynSiYqx57P43j0EMR6jSENpLhnmmC1mawopHrr9aZxYuiqm7IunjctnzOjijXE9eQ4bhp0oY3xJ981drX4wyKGhK5erqnUeLeXrYRNQllHd7V1qyHwEbcdN7R2fWyFwvLZ5hB1Xcl_I-odHsY-TvrNbnZ39EKHytbFJI5EXfiU-HTAgwN0fI9qTzhPdXRgMkzypCFjoQe0kobbcM834W1OowGnSTFJFm91u-U1SK6XQ3Ui3Pi_hEZvXZF2wHdoSTxCAPQdndZ3jZdIfD-pNQmpXZ-Bfpqml_7UN8UZdBwkufPKY1ULHgnlZFQsrDLSUn5bx2DlnFucMa6qma2QFf1kbyV3daWEE4RQuRXX711HUCikeF27C0XZgcMwIC9M-ctSYYMmy2udGWsMGNKVtLaoseRgrwA=w1318-h464-no?authuser=0">
   <link rel="canonical" href="http://yoursite.com/2021/11/25/hexo-deploy-error/">
 
 
@@ -83,8 +83,18 @@
   };
 </script>
 
-  <title>hexo deploy error | 瑞瑞 BLOG</title>
+  <title>hexo deploy error | Rayrayer</title>
   
+  <script async src="https://www.googletagmanager.com/gtag/js?id=3076734408"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '3076734408');
+    }
+  </script>
 
 
 
@@ -130,7 +140,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">瑞瑞 BLOG</span>
+        <span class="site-title">Rayrayer</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -212,13 +222,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/11/25/hexo-deploy-error/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ErnestTsai">
+      <meta itemprop="name" content="Rayrayer">
       <meta itemprop="description" content="從零開始的前端生活">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞瑞 BLOG">
+      <meta itemprop="name" content="Rayrayer">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">hexo deploy error
@@ -248,7 +258,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-11-26 01:04:41" itemprop="dateModified" datetime="2021-11-26T01:04:41+08:00">2021-11-26</time>
+                <time title="Modified: 2021-12-01 00:16:51" itemprop="dateModified" datetime="2021-12-01T00:16:51+08:00">2021-12-01</time>
               </span>
             
           
@@ -278,9 +288,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="hexo-TypeError-ERR-INVALID-ARG-TYPE-The-“mode”-argument-must-be-integer-Received-an-instance-of-Object"><a href="#hexo-TypeError-ERR-INVALID-ARG-TYPE-The-“mode”-argument-must-be-integer-Received-an-instance-of-Object" class="headerlink" title="hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object"></a>hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object</h1><h2 id="hexo-deploy-g時出現以下錯誤"><a href="#hexo-deploy-g時出現以下錯誤" class="headerlink" title="hexo deploy -g時出現以下錯誤"></a>hexo deploy -g時出現以下錯誤</h2><img src="https://imgur.com/gUMb9EF"><p>出現以上的錯誤，後來查詢了一下是因為node.js版本過高導致<br>當時我的node.js版本是v14~</p><a id="more"></a>
+        <p>hexo deploy -g時出現以下錯誤</p>
+<p>hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object</p>
+<a id="more"></a>
 
-
+<p><img src="https://lh3.googleusercontent.com/oPDVNVO4DV7lH44RNccFJ4zwILJZmfjoYbfwcc9Kvl4u1qPjU6WKcgrRzolEFc4cqmtKBDo1zBXRBbE319Apm5t_gzv58i0HxDqQ-tbanYAyEjzsjD2YnBpPVI4ucCd_BkiSanBXy1CBHkUPXbTHjRwFS4Nth1BfbAfggINR_d7dxbVpsshK3WLzdzeK8jXoXUrTOAloLIjDhVLfi_q1ocW9xExtuR6g0dc6to0mcW_piwx07WaYvmqHjFbbj1-UCWamDqrjPcloalUz3Nk6UAkqI-it7NgjMnNCQ6X6gkqIkjWHnIy6eY1wCzynSiYqx57P43j0EMR6jSENpLhnmmC1mawopHrr9aZxYuiqm7IunjctnzOjijXE9eQ4bhp0oY3xJ981drX4wyKGhK5erqnUeLeXrYRNQllHd7V1qyHwEbcdN7R2fWyFwvLZ5hB1Xcl_I-odHsY-TvrNbnZ39EKHytbFJI5EXfiU-HTAgwN0fI9qTzhPdXRgMkzypCFjoQe0kobbcM834W1OowGnSTFJFm91u-U1SK6XQ3Ui3Pi_hEZvXZF2wHdoSTxCAPQdndZ3jZdIfD-pNQmpXZ-Bfpqml_7UN8UZdBwkufPKY1ULHgnlZFQsrDLSUn5bx2DlnFucMa6qma2QFf1kbyV3daWEE4RQuRXX711HUCikeF27C0XZgcMwIC9M-ctSYYMmy2udGWsMGNKVtLaoseRgrwA=w1318-h464-no?authuser=0" alt="hexo d error"></p>
+<p>出現以上的錯誤，後來查詢了一下是因為node.js版本過高導致<br>當時我的node.js版本是v14~</p>
 <p>改由較為穩定的v12版本後就可以正常使用了</p>
 
     </div>
@@ -379,14 +392,12 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-TypeError-ERR-INVALID-ARG-TYPE-The-“mode”-argument-must-be-integer-Received-an-instance-of-Object"><span class="nav-number">1.</span> <span class="nav-text">hexo TypeError [ERR_INVALID_ARG_TYPE]: The “mode” argument must be integer. Received an instance of Object</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-deploy-g時出現以下錯誤"><span class="nav-number">1.1.</span> <span class="nav-text">hexo deploy -g時出現以下錯誤</span></a></li></ol></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">ErnestTsai</p>
+  <p class="site-author-name" itemprop="name">Rayrayer</p>
   <div class="site-description" itemprop="description">從零開始的前端生活</div>
 </div>
   <nav class="site-state motion-element">
@@ -432,7 +443,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">瑞瑞</span>
+  <span class="author" itemprop="copyrightHolder">Rayrayer</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>

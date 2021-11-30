@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="Vue的專案資料夾結構12345678910111213141516171819202122|-- dist                     編譯後的檔案目錄|-- node_modules             npm模組包|-- public                   模板檔案和靜態資源|-- src                      開發目錄（配置完成後基本只在該">
+  <meta name="description" content="Vue的專案資料夾結構">
 <meta name="keywords" content="vue,js,vue.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue的專案資料夾結構">
 <meta property="og:url" content="http://yoursite.com/2020/03/19/Vue的專案資料夾結構/index.html">
-<meta property="og:site_name" content="瑞瑞 BLOG">
-<meta property="og:description" content="Vue的專案資料夾結構12345678910111213141516171819202122|-- dist                     編譯後的檔案目錄|-- node_modules             npm模組包|-- public                   模板檔案和靜態資源|-- src                      開發目錄（配置完成後基本只在該">
+<meta property="og:site_name" content="Rayrayer">
+<meta property="og:description" content="Vue的專案資料夾結構">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-13T16:56:05.820Z">
+<meta property="og:updated_time" content="2021-11-30T16:12:25.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue的專案資料夾結構">
-<meta name="twitter:description" content="Vue的專案資料夾結構12345678910111213141516171819202122|-- dist                     編譯後的檔案目錄|-- node_modules             npm模組包|-- public                   模板檔案和靜態資源|-- src                      開發目錄（配置完成後基本只在該">
+<meta name="twitter:description" content="Vue的專案資料夾結構">
   <link rel="canonical" href="http://yoursite.com/2020/03/19/Vue的專案資料夾結構/">
 
 
@@ -81,8 +81,18 @@
   };
 </script>
 
-  <title>Vue的專案資料夾結構 | 瑞瑞 BLOG</title>
+  <title>Vue的專案資料夾結構 | Rayrayer</title>
   
+  <script async src="https://www.googletagmanager.com/gtag/js?id=3076734408"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '3076734408');
+    }
+  </script>
 
 
 
@@ -128,7 +138,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">瑞瑞 BLOG</span>
+        <span class="site-title">Rayrayer</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -210,13 +220,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/19/Vue的專案資料夾結構/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ErnestTsai">
+      <meta itemprop="name" content="Rayrayer">
       <meta itemprop="description" content="從零開始的前端生活">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="瑞瑞 BLOG">
+      <meta itemprop="name" content="Rayrayer">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">Vue的專案資料夾結構
@@ -246,7 +256,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-14 00:56:05" itemprop="dateModified" datetime="2020-04-14T00:56:05+08:00">2020-04-14</time>
+                <time title="Modified: 2021-12-01 00:12:25" itemprop="dateModified" datetime="2021-12-01T00:12:25+08:00">2021-12-01</time>
               </span>
             
           
@@ -276,7 +286,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Vue的專案資料夾結構"><a href="#Vue的專案資料夾結構" class="headerlink" title="Vue的專案資料夾結構"></a>Vue的專案資料夾結構</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">|-- dist                     編譯後的檔案目錄</span><br><span class="line">|-- node_modules             npm模組包</span><br><span class="line">|-- public                   模板檔案和靜態資源</span><br><span class="line">|-- src                      開發目錄（配置完成後基本只在該資料夾開發即可）</span><br><span class="line">   |-- assets                    資源，如 css、image、iconfont</span><br><span class="line">   |-- components                元件</span><br><span class="line">   |-- router                    路由 vue-router</span><br><span class="line">   |-- store                     狀態 vuex</span><br><span class="line">   |-- views                     路由元件，即某個路由直接指向該元件</span><br><span class="line">   |-- App.vue                   專案入口元件</span><br><span class="line">   |-- main.js                   專案入口</span><br><span class="line">|-- .browserslistrc          配置支援的瀏覽器範圍，babel會根據這個進行 Polyfill</span><br><span class="line">|-- .editorconfig            code style 設定</span><br><span class="line">|-- .env.development         開發環境變數設定</span><br><span class="line">|-- .env.production          正式環境變數設定</span><br><span class="line">|-- .eslintrc.js             eslint 設定</span><br><span class="line">|-- .gitignore               git 忽略目錄</span><br><span class="line">|-- babel.config.js          babel 設定</span><br><span class="line">|-- package.json             專案依賴列表</span><br><span class="line">|-- postcss.config.js        postcss 設定</span><br><span class="line">|-- README.md</span><br><span class="line">|-- vue.config.js            專案配置及 webpack 配置</span><br></pre></td></tr></table></figure>
+        <h2 id="Vue的專案資料夾結構"><a href="#Vue的專案資料夾結構" class="headerlink" title="Vue的專案資料夾結構"></a>Vue的專案資料夾結構</h2><a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">|-- dist                     編譯後的檔案目錄</span><br><span class="line">|-- node_modules             npm模組包</span><br><span class="line">|-- public                   模板檔案和靜態資源</span><br><span class="line">|-- src                      開發目錄（配置完成後基本只在該資料夾開發即可）</span><br><span class="line">   |-- assets                    資源，如 css、image、iconfont</span><br><span class="line">   |-- components                元件</span><br><span class="line">   |-- router                    路由 vue-router</span><br><span class="line">   |-- store                     狀態 vuex</span><br><span class="line">   |-- views                     路由元件，即某個路由直接指向該元件</span><br><span class="line">   |-- App.vue                   專案入口元件</span><br><span class="line">   |-- main.js                   專案入口</span><br><span class="line">|-- .browserslistrc          配置支援的瀏覽器範圍，babel會根據這個進行 Polyfill</span><br><span class="line">|-- .editorconfig            code style 設定</span><br><span class="line">|-- .env.development         開發環境變數設定</span><br><span class="line">|-- .env.production          正式環境變數設定</span><br><span class="line">|-- .eslintrc.js             eslint 設定</span><br><span class="line">|-- .gitignore               git 忽略目錄</span><br><span class="line">|-- babel.config.js          babel 設定</span><br><span class="line">|-- package.json             專案依賴列表</span><br><span class="line">|-- postcss.config.js        postcss 設定</span><br><span class="line">|-- README.md</span><br><span class="line">|-- vue.config.js            專案配置及 webpack 配置</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -307,8 +319,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2020/03/12/Vscode-使用hexo指令失效問題/" rel="next" title="Vscode 使用hexo指令失效問題">
-                  <i class="fa fa-chevron-left"></i> Vscode 使用hexo指令失效問題
+                <a href="/2020/03/12/Vscode-使用hexo指令失效問題/" rel="next" title="Vscode 使用hexo指令失效">
+                  <i class="fa fa-chevron-left"></i> Vscode 使用hexo指令失效
                 </a>
               
             </div>
@@ -377,14 +389,14 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue的專案資料夾結構"><span class="nav-number">1.</span> <span class="nav-text">Vue的專案資料夾結構</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue的專案資料夾結構"><span class="nav-number">1.</span> <span class="nav-text">Vue的專案資料夾結構</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">ErnestTsai</p>
+  <p class="site-author-name" itemprop="name">Rayrayer</p>
   <div class="site-description" itemprop="description">從零開始的前端生活</div>
 </div>
   <nav class="site-state motion-element">
@@ -430,7 +442,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">瑞瑞</span>
+  <span class="author" itemprop="copyrightHolder">Rayrayer</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>
